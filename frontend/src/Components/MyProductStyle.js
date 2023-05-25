@@ -41,12 +41,30 @@ export const Container = styled.div`
 
     button {
     
-        background: #14d7b3;
-        color: black;
-        margin-top: 2%;
-        padding: 12px 20px;
-        border: none;
+        background: #66ff33;
         border-radius: 4px;
+        border: none;
+        font-size: medium;
+        width: 40%;
+        height: 40px;
+        color: black;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-out;
+      
+        &:hover {
+          background: #66ff33;
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+      
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 5px #58F4D8;
+        }
+      
+        &:active {
+          transform: scale(0.95);
+        }
     }
     /* .btnLogin{
         background: #14d7b3;

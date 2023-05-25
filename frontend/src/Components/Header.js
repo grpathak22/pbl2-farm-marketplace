@@ -44,7 +44,7 @@ const UseButtonLogin = () => {
              </div>
              <div id="informationCart">
                 <img src={iconCart} id="Icon-Cart" alt="Icon-Cart"/>
-                <p id="cartPrice">${parseFloat(cartPrice).toFixed(2)}</p>
+                <p id="cartPrice">₹ {parseFloat(cartPrice).toFixed(2)}</p>
                 <button id="btnCheckout" onClick={()=> navigate('/myCart')}>My Cart</button>
              </div>
         </Container>

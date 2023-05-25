@@ -62,8 +62,8 @@ const Home = () => {
                  {/* <ProductsFeed /> */}
                  <Routes>
                  {/* <Route exact path="/" element={<Home />}/> */}
-                 <Route exact path="/www" element={<ProductsFeed />}/>
-                 <Route path="/login" element={<Login/>} />
+                 <Route exact path="/www" element={<Login />}/>
+                 <Route  path="/login" element={<Login/>} />
                  <Route path="/createAccount" element={<CreateAccount />} /> 
                  <Route path="/myAccount" element={<MyAccount />} /> 
                  <Route path="/addProduct" element={<AddProduct />} /> 

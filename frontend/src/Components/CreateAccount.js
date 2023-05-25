@@ -12,6 +12,7 @@ const CreateAccount = () => {
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [message, setMessage] = useState('');
   const [selectedOption, setSelectedOption] = useState('Customer');
@@ -62,7 +63,20 @@ const CreateAccount = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (phoneNumber.length !== 10) {
+      setMessage('Mobile number must be 10 digits');
+      return;
+    }
 
+    if (!email.includes('@') || !email.includes('.')) {
+      setMessage('Email must be valid');
+      return;
+    }
+
+    if (password.length < 8) {
+      setMessage('Password must be at least 8 characters');
+      return;
+    }
     const userData = {
       FirstName: firstName,
       LastName: lastName,
@@ -86,8 +100,7 @@ const CreateAccount = () => {
       .then((data) => {
         console.log(data);
         setMessage('User created');
-        // Handle the response from the server
-        // You can redirect to another page or show a success message
+        
       })
       .catch((error) => {
         console.error('Error:', error);

@@ -82,7 +82,7 @@ const AddProduct = () =>   {
             <label className = "labelAddProduct" htmlFor="productPrice">Price: </label> 
             <input className = "inputAddProduct" type="text" name="productPrice" placeholder="Product Price" value={productPrice} onChange={(e) => setProductPrice(e.target.value)} required/>
             <br/>
-            <label className = "labelAddProduct" htmlFor="productQuantity">Quantity: </label> 
+            <label className = "labelAddProduct" htmlFor="productQuantity">Quantity(In Kg): </label> 
             <input className = "inputAddProduct" type="text" name="productQuantity" placeholder="Product Quantity" value= {productQuantity} onChange={(e) => setProductQuantity(e.target.value)} required/>
             <br/>
             <label className = "labelAddProduct" htmlFor="productCategory">Category </label> 

@@ -10,9 +10,9 @@ export const Container = styled.div`
     height: 7em;
 
     img{
-        width: 15%;
+        width: 18%;
     }
-    #seacrhProducts{
+    #searchProducts{
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 }
 
 #inpSearch{
-    width: 78%;
+    width: 100%;
     height: 35px;
     font-size:medium;
     border-radius: 4px;
@@ -44,18 +44,55 @@ export const Container = styled.div`
 #Icon-Search{
     width: 20%;
 }
-#btnSearch{
+#btnSearch {
     display: flex;
-    background: #14d7b3;
+    background: #061a00;
     border-radius: 4px;
     border: none;
     color: white;
     align-items: center;
     justify-content: space-around;
     font-size: medium;
-    width: 20%;
+    width: 50%;
     height: 40px;
-}
+    margin-left: 55px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btnSearch::before,
+  #btnSearch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #btnSearch::before {
+    left: -100%;
+  }
+  
+  #btnSearch::after {
+    right: -100%;
+  }
+  
+  #btnSearch:hover {
+    background-color: #a6cfd7;
+  }
+  
+  #btnSearch:hover::before {
+    transform: translateX(100%);
+  }
+  
+  #btnSearch:hover::after {
+    transform: translateX(-100%);
+  }
+  
 #informationUser{
     width: 10%;
    
@@ -76,23 +113,39 @@ export const Container = styled.div`
 }
 
 #Icon-Cart{
-    padding-right: 3%;
+    padding-right: 2%;
 }
 
 #cartPrice{
-    padding-right: 15%;
+    padding-right: 10%;
 }
 
-#btnCheckout{
-    background-color: #0E60FF;
+#btnCheckout {
+    background-color: #94b405;
     color: white;
     height: 40px;
     width: 48%;
-    border-style: none;
+    border: none;
     border-radius: 4px;
     font-size: medium;
     font-weight: bold;
-}
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #btnCheckout:hover {
+    background-color: #ff9933;
+    transform: scale(1.05);
+  }
+  
+  #btnCheckout:focus {
+    outline: none;
+  }
+  
+  #btnCheckout:active {
+    transform: scale(0.95);
+  }
+  
 .btnItem{
     background: #14d7b3;
     color: black;

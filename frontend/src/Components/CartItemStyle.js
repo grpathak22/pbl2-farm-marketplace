@@ -45,25 +45,79 @@ padding-top: 2%;
     padding-left: 8%;
 }
 #btnAdd{
-    background: #58F4D8;
+    background: #66ff33;
     border-radius: 4px;
     border: none;
     font-size: medium;
-    width: 24%;
+    width: 40%;
     height: 40px;
     color: black;
     font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-out;
+  
+    &:hover {
+      background: #66ff10;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px #58F4D8;
+    }
+  
+    &:active {
+      transform: scale(0.95);
+    }
 }
 
 #btnRemove{
-    background: rgb(234, 110, 110);
+    background: rgb(234 110 110);
     border-radius: 4px;
     border: none;
     font-size: medium;
-    width: 24%;
+    width: 40%;
     height: 40px;
     color: black;
     font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-out;
+  
+    &:hover {
+      background: #FF4B4B;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px #FF4B4B;
+    }
+  
+    &:active {
+      transform: scale(0.95);
+    }
+  
+    &.shake-animation {
+      animation: shake 0.5s ease-in-out;
+    }
+  
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(5px);
+      }
+      75% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 }
 
 #groupButtonCart{

@@ -38,7 +38,7 @@ const Login  = () => {
                 sessionStorage.setItem("typeOfAccount", data.TypeAccount);
                 sessionStorage.setItem("accountID", data.accountID);
                 setmMssage(data.message);
-                window.location.replace(path);
+                window.location.replace('http://localhost:3000/productFeed/');
                 // navigate('/');
             }else{
                 setmMssage('Invalid user');

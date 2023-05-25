@@ -10,7 +10,7 @@ export const Container = styled.div`
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: rgb(20, 215, 179);
+    background-color: #c4ff4d;
     flex-direction: row;
     -webkit-box-pack: start;
     justify-content: space-between;

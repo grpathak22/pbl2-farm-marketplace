@@ -57,7 +57,7 @@ function CartItem (props) {
                         <button id="btnAdd" onClick={() => handleAdd(props.productItem, props.key)} >+</button>
                     </div> 
                 }
-                <p id="ItemPrice">$ {parseFloat(cart[props.productItem.ProductID].totalPriceItem).toFixed(2)}</p>
+                <p id="ItemPrice">₹ {parseFloat(cart[props.productItem.ProductID].totalPriceItem).toFixed(2)}</p>
             </div>
         </Container>
     );

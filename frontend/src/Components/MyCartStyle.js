@@ -29,14 +29,30 @@ h1 {
     padding-left: 0%;
 }
 
-#btnCheckout{
-    background: rgb(20, 215, 179);
+#btnCheckout {
+    background: #ff9933;
     color: black;
     margin-top: 2%;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-}
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #btnCheckout:hover {
+    background: #ffbf80;
+    transform: scale(1.05);
+  }
+  
+  #btnCheckout:focus {
+    outline: none;
+  }
+  
+  #btnCheckout:active {
+    transform: scale(0.95);
+  }
+  
 
 .checkout{
     display: flex;
@@ -70,6 +86,10 @@ h1 {
 }
 
 .inputMonthCheckout{
+    width: 15%;
+    height: 25px;
+}
+.inputYearCheckout{
     width: 15%;
     height: 25px;
 }
