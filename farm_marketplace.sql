@@ -4,7 +4,6 @@
 --
 -- Host: localhost
 -- Generation time: 21/04/2023 at 07:32
--- Server version: 10.4.24-MariaDB
 -- PHP version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -49,9 +48,6 @@ CREATE TABLE `farmer` (
 
 -- Dumping data for table `farmer`
 
-
-INSERT INTO `farmer` (`FarmerID`, `UserId`, `Address`, `City`, `Province`, `PhoneNumber`) VALUES
-(4, 12, '108 University Ave', 'Waterloo', 'ON', '(519) 885-0300');
 
 -- --------------------------------------------------------
 
