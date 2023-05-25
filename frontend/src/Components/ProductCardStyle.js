@@ -69,14 +69,14 @@ h2 {
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-out;
   
     &:hover {
-      background: #58F4D8;
+      background: #629C1E;
       cursor: pointer;
       transform: scale(1.05);
     }
   
     &:focus {
       outline: none;
-      box-shadow: 0 0 5px #58F4D8;
+      box-shadow: 0 0 5px #629C1E;
     }
   
     &:active {

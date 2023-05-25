@@ -22,7 +22,7 @@ background-color: #F3F1F1;
 }
 .loginInput {
     width: 20%;
-    padding: 5px 10px;
+    padding: 1px 10px;
     margin: 8px 0;
     box-sizing: border-box;
 }
@@ -31,14 +31,28 @@ label{
     padding: 12px 12px 12px 0;
     display: inline-flex;
 }
-.linkTo{
-    background-color: #0E60FF;
-    color: white;
-    margin-top: 2%;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+.linkTo {
+  background-color: #66ff66;
+  color: black;
+  margin-top: -8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
 }
+
+.linkTo:hover {
+  background-color: #99ff99;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 button{
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: inline-block;

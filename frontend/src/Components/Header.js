@@ -26,9 +26,9 @@ const Header = () => {
          </>
    }
     
-const UseButtonLogin = () => {
-   return <button className="btnItem" onClick={handleLogin}>Login</button>;
-}
+// const UseButtonLogin = () => {
+//    return <button className="btnItem" onClick={handleLogin}>Login</button>;
+// }
   
 
     return(
@@ -40,7 +40,7 @@ const UseButtonLogin = () => {
              </div>
              <div id="informationUser">
                 {hasSession && UseName() }
-                {!hasSession && UseButtonLogin() }
+                {/* {!hasSession && UseButtonLogin() } */}
              </div>
              <div id="informationCart">
                 <img src={iconCart} id="Icon-Cart" alt="Icon-Cart"/>

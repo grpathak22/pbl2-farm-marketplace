@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background: #FFFFFF;
+    
     height: 7em;
 
     img{
@@ -95,10 +95,12 @@ export const Container = styled.div`
   
 #informationUser{
     width: 10%;
+    
    
 }
 
 #Icon-Profile{
+    margin-left: 60px;
     width: 25%;
 }
 
@@ -116,13 +118,24 @@ export const Container = styled.div`
     padding-right: 2%;
 }
 
-#cartPrice{
+#cartPrice {
     padding-right: 10%;
+    margin-right: 25px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding: 15px;
+    display: inline-block;
 }
 
+
 #btnCheckout {
-    background-color: #94b405;
-    color: white;
+    background-color: #c4ff4d;
+    color: black;
     height: 40px;
     width: 48%;
     border: none;
